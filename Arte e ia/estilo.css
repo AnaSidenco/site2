@@ -1,0 +1,147 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #f0f0f0;
+  background: linear-gradient(to right, #2a004e, #5c006e, #3e0045);
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(20, 0, 40, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+header .logo {
+  font-size: 2rem;
+  color: #bb86fc; 
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+header .menu-link {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 15px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+header .menu-link:hover {
+  background: #bb86fc;
+  color: #1c0b2d;
+  transform: scale(1.1);
+  box-shadow: 0px 3px 15px rgba(187, 134, 252, 0.5);
+}
+
+
+.topo {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background: url('hero-bg.jpg') center/cover no-repeat;
+  padding: 0 20px;
+}
+
+.topo h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.topo p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.topo .btn {
+  padding: 15px 30px;
+  background: #bb86fc;
+  color: #1c0b2d;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(187, 134, 252, 0.5);
+}
+
+.topo .btn:hover {
+  transform: scale(1.1);
+  background: #9933cc;
+  box-shadow: 0px 10px 20px rgba(187, 134, 252, 0.8);
+}
+
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background: rgba(30, 0, 50, 0.9);
+  margin-top: 100px;
+  border-top: 5px solid #bb86fc;
+  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.intro .text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #bb86fc;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+ 
+}
+
+.intro .text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .topo h1 {
+      font-size: 2.5rem;
+  }
+
+  .topo p {
+      font-size: 1rem;
+  }
+
+  header {
+      flex-direction: column;
+  }
+}
+
+
+  
